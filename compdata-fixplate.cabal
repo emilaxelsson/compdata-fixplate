@@ -1,5 +1,5 @@
 name:                compdata-fixplate
-version:             0.1
+version:             0.1.1
 synopsis:            Compdata basics implemented on top of Fixplate
 description:         This package implements the basic interface of
                      <https://hackage.haskell.org/package/compdata Compdata>
@@ -20,9 +20,15 @@ license-file:        LICENSE
 author:              Emil Axelsson
 maintainer:          78emil@gmail.com
 copyright:           2018 Emil Axelsson
+homepage:            https://github.com/emilaxelsson/compdata-fixplate
+bug-reports:         https://github.com/emilaxelsson/compdata-fixplate/issues
 category:            Generics
 build-type:          Simple
 cabal-version:       >=1.10
+
+source-repository head
+  type:     git
+  location: https://github.com/emilaxelsson/compdata-fixplate
 
 library
   exposed-modules:   Data.Comp.Fixplate
