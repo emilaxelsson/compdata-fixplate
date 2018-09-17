@@ -162,6 +162,7 @@ type Term = Mu
 
 pattern Term :: f (Term f) -> Term f
 pattern Term f = Fix f
+{-# COMPLETE Term #-}
 
 unTerm :: Term f -> f (Term f)
 unTerm (Term f) = f
@@ -170,6 +171,7 @@ type f :&: a = Ann f a
 
 pattern (:&:) :: f b -> a -> (f :&: a) b
 pattern f :&: a = Ann a f
+{-# COMPLETE (:&:) #-}
 
 class f :<: g where
   inj :: f a -> g a

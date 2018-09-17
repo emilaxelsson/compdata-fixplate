@@ -1,5 +1,5 @@
 name:                compdata-fixplate
-version:             0.1.1
+version:             0.1.2
 synopsis:            Compdata basics implemented on top of Fixplate
 description:         This package implements the basic interface of
                      <https://hackage.haskell.org/package/compdata Compdata>
@@ -40,3 +40,4 @@ library
                      tree-view
   hs-source-dirs:    src
   default-language:  Haskell2010
+  ghc-options:       -Wall
