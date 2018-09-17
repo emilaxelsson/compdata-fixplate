@@ -209,7 +209,7 @@ project = prj . unTerm
 toTree :: (Functor f, Foldable f) => Term f -> Tree (f Hole)
 toTree = cata $ \f -> Node (const Hole <$> f) $ toList f
 
--- Wrapper type with a 'ShowF' instance that does not show injections ('InL',
+-- | Wrapper type with a 'ShowF' instance that does not show injections ('InL',
 -- 'InR')
 newtype HideInj f a = HideInj {unHideInj :: f a}
   deriving (Foldable, Functor, Traversable)
