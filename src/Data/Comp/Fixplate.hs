@@ -8,7 +8,7 @@
 {-# LANGUAGE PatternSynonyms #-}
 {-# LANGUAGE TypeOperators #-}
 
--- | A replacement for the basic machinery in
+-- | A modest replacement for the basic machinery in
 -- [Compdata](https://hackage.haskell.org/package/compdata).
 --
 -- = Differences and limitations
